@@ -209,9 +209,9 @@ function main() {
     
     // Cập nhật trục quay ngẫu nhiên nhưng ưu tiên trục chính
     const mainAxis = Math.floor(Math.random() * 3); // 0:x, 1:y, 2:z
-    x = mainAxis === 0 ? 1 : Math.random() * 0.3;
-    y = mainAxis === 1 ? 1 : Math.random() * 0.3;
-    z = mainAxis === 2 ? 1 : Math.random() * 0.3;
+    x = mainAxis === 0 ? 3 : Math.random() * 0.3;
+    y = mainAxis === 1 ? 3 : Math.random() * 0.3;
+    z = mainAxis === 2 ? 3 : Math.random() * 0.3;
     
     // Chuẩn hóa vector
     const length = Math.sqrt(x*x + y*y + z*z);
