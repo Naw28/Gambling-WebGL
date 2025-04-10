@@ -1,0 +1,85 @@
+<html>
+<head>
+ <script src="cuon-matrix.js"></script>
+ <script src="cuon-utils.js"></script>
+ <script src="webgl-debug.js"></script>
+ <script src="webgl-utils.js"></script>
+ <script src="index.js"></script>
+ 
+ <style>
+    canvas {
+        position: relative;
+        z-index: 1;
+    }
+    .bet-button {
+        padding: 10px 20px;
+        font-size: 18px;
+        margin: 0 10px;
+        cursor: pointer;
+    }
+    #tai-btn {
+        background-color: #4CAF50;
+        color: white;
+    }
+    #xiu-btn {
+        background-color: #f44336;
+        color: white;
+    }
+    .selected {
+        border: 3px solid black;
+    }
+    #result {
+        font-size: 24px;
+        margin: 20px 0;
+    }
+    #taiXiu {
+        font-size: 32px;
+        font-weight: bold;
+        margin: 10px 0;
+    }
+    .dice-result {
+    margin: 0 15px;
+    text-align: center;
+    }
+    .dice-value {
+        font-size: 36px;
+        font-weight: bold;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        border: 2px solid #333;
+        border-radius: 8px;
+        margin: 0 auto;
+        background-color: white;
+        color: black;
+    }
+    .dice-label {
+        margin-top: 5px;
+        font-size: 16px;
+    }
+    h1{
+        margin-left: 20px ;
+    }
+ </style>
+ 
+</head>
+<body onload="main()">
+<form name="myform">
+    <canvas id="webgl" width="400" height="400"></canvas>
+    <h1>Tài Xỉu</h1>
+    <div>
+        <button type="button" id="tai-btn" class="bet-button">Tài</button>
+        <button type="button" id="xiu-btn" class="bet-button">Xỉu</button>
+    </div>
+    <div id="user-choice" style="font-size: 20px; margin: 10px 0;"></div>
+    <div id="result"></div>
+    <div id="taiXiu"></div>
+
+    <div>
+        <button type="button" id="tam" class="bet-button">Bắt đầu</button>
+        <button type="button" id="dung" class="bet-button">Dừng lại</button>
+        <button type="button" id="kqua" class="bet-button">Kết quả</button>
+    </div>
+</form>
+</body>
+</html>
